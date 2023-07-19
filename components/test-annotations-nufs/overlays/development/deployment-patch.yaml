@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-annotations-nufs
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/tnevrlka-test/build-e2e-phei-tenant/test-annotations-app-pcxs/test-annotations-nufs@sha256:8b2dd27f46a9f36b6b0ef0fc7a35c6bc8c3e027ba6db9acf776dae8af1f6bf45
+        name: my-nginx
+        resources: {}
+status: {}
